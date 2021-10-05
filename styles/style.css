@@ -1,18 +1,67 @@
 body {
-   
+    background-color: #c44900;
 }
 
 
 
 .container {
     position: absolute;
-    width: 60%;
-    min-width: 500px;
+    width: 40%;
+    min-width: 300px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     display: grid;
     justify-items: center;
     padding: 50px 10px;
-    background-color: #ffddd2;
+    border-radius: 80px;
+    background-color: #efd6ac;
+}
+
+h1 {
+    font-family: "Montserrat" sans-serif;
+    font-weight: 200;
+    color: #183a37;
+    border: dotted #3a5a40;
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Montserrat" sans-serif;
+    font-weight: 100;
+    color: #183a37;
+}
+
+h3 {
+    font-family: "Montserrat" sans-serif;
+    font-weight: 100;
+    color: #183a37;
+
+}
+
+#user-guess {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#guess-button {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: "Montserrat" sans-serif;
+}
+
+#message-2 {
+    font-family: "Montserrat" sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #183a37;
+}
+
+
+#message-3 {
+    font-family: "Montserrat" sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #183a37;
 }

@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+
+    <!--font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+
     <title>Guess A Number</title>
 </head>
 
@@ -20,13 +26,11 @@
         <h2>Guess a Number Between 1-20!</h2>
         <h3>You Get 4 Tries!</h3>
     
+        <span id="message-1"></span><br>
         <input id="user-guess" type="number" placeholder="number">
-        <p id="result"></p>
         
         <button id="guess-button">GUESS</button>
-    
-    
-        <span id="message-1"></span>
+        
         <p id="message-2">No. Of Guesses Left: 0</p>
         <p id="message-3">Guessed Numbers: <span id='numbers-guessed'>None</span> </p>
 
