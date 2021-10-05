@@ -19,22 +19,26 @@ guessButton.addEventListener('click', ()=>{
 numberGuessesLeft --;
 const guess = Number(userGuess.value);
 
-let msg1;
+let userStatus;
 if (guess === randomNum) {
-    msg1 = 'You\'re right!';
+    userStatus = 'You\'re right!';
   }
 else if (guess > randomNum) {
-   msg1 = 'Number too high!';
+   userStatus = 'Number too high!';
  }
 else if (guess < randomNum) {
-   msg1 = 'Number too low!';
+   userStatus = 'Number too low!';
    }
 else if (numberGuessesLeft === 0) {
-   msg1 = 'No more guesses.';
+   userStatus = 'No more guesses.';
+   guessButton.style.display = 'none';
  }
  
+ msg1.textContent = `${userStatus}`;
  msg2.textContent = 'No. of Guesses Left: ' + `${numberGuessesLeft}`;
  msg3.textContent = 'Guessed Numbers: ' + `${userGuess.value}`;
+
+ // how do i get msg3 to list all numbers guessed and not just one at a time? ^^
 
 // console.log(numberGuessesLeft);
 // console.log(randomNum); 
