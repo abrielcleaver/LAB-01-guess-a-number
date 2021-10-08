@@ -1,9 +1,7 @@
 
 const userGuess = document.getElementById('user-guess');
-const result = document.getElementById('result');
 const guessButton = document.getElementById('guess-button');
 const guessCount = document.getElementById('guess-count');
-const guessed = document.getElementById('numbers-guessed');
 const resetButton = document.getElementById('resetButton');
 
 const msg1 = document.getElementById('message-1');
@@ -28,11 +26,10 @@ guessButton.addEventListener('click', ()=>{
         userStatus = 'Number too high!';
     } else {
     // (guess < randomNum) {
-      
         userStatus = 'Number too low!';
     } 
     if (guess !== randomNum && numberGuessesLeft === 0) {
-        console.log('I am here');
+      //  console.log('I am here');
         userStatus = 'No more guesses.';
         guessButton.style.display = 'none';
       
@@ -52,6 +49,7 @@ guessButton.addEventListener('click', ()=>{
 resetButton.addEventListener('click', ()=>{
     msg1.textContent = '';
     msg2.textContent = 'Number of Guesses Left: 0';
-    msg3.textContent = 'Guessed Numbers: ';
-    console.log('click');
+    msg3.textContent = 'Guessed Numbers: None ';
+   // console.log('click');
+   guessButton.style.display = '' ;
 });
