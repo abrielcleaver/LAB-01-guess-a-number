@@ -52,7 +52,12 @@ h3 {
     font-family: "Montserrat" sans-serif;
 }
 
-
+#resetButton {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: "Montserrat" sans-serif;
+}
 #message-2 {
     font-family: "Montserrat" sans-serif;
     font-weight: 300;
