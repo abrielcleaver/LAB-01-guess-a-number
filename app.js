@@ -1,7 +1,6 @@
 
 const userGuess = document.getElementById('user-guess');
 const guessButton = document.getElementById('guess-button');
-const guessCount = document.getElementById('guess-count');
 const resetButton = document.getElementById('resetButton');
 
 const msg1 = document.getElementById('message-1');
@@ -47,9 +46,9 @@ guessButton.addEventListener('click', ()=>{
 });
 
 resetButton.addEventListener('click', ()=>{
-    msg1.textContent = '';
-    msg2.textContent = 'Number of Guesses Left: 0';
-    msg3.textContent = 'Guessed Numbers: None ';
-   // console.log('click');
-   guessButton.style.display = '' ;
+  msg1.textContent = '';
+  msg2.textContent = 'Number of Guesses Left: 0';
+  msg3.textContent = 'Guessed Numbers: None ';
+  // console.log('click');
+  guessButton.style.display = '' ;
 });
